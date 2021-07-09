@@ -2,7 +2,7 @@ from googleapiclient.discovery import build
 import json
 f = open('data.json',)
 data = json.load(f)
-api_key = 'AIzaSyCs9bYU0Fzb2e8B2lk3NaG_j9CYdhUU-7Q'
+api_key = 'youkey'
 replies = []
 
 
@@ -11,7 +11,7 @@ def video_comments(video_id):
 
     # creating youtube resource object
     youtube = build('youtube', 'v3',
-                    developerKey='AIzaSyCs9bYU0Fzb2e8B2lk3NaG_j9CYdhUU-7Q')
+                    developerKey='youkey')
     # retrieve youtube video results
     video_response = youtube.commentThreads().list(
         part='snippet,replies',
