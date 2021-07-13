@@ -51,9 +51,22 @@
 ## 功能展示
 
 輸入 api 和 youtube 頻道主總影片網址(ex: https://www.youtube.com/c/%E9%BB%83%E6%B0%8F%E5%85%84%E5%BC%9F/videos )，對一到兩頁(可自由增加)的影片評論進行爬取。
-![Product Name Screen Shot][search-screenshot]
+
+```python
+api_key = 'youapi'
+driver.get("頻道主總影片網址")
+```
+
+<br>
 
 打開儲存的評論 json 檔後，對大量評論進行情感分析，分數為 0 到 1 之間，越接近 1 代表越高機率為正向評論。
+
+```python
+f = open('comments/dailyLive/'+youtuberName + '.json', encoding='utf-8')
+dataComment = json.load(f)
+f.close()
+```
+
 ![Product Name Screen Shot][product-screenshot]
 
 ## 使用技術
