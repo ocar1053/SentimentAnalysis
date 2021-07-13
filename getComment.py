@@ -5,7 +5,7 @@ import json
 import asyncio
 from googleapiclient.discovery import build
 driver = webdriver.Chrome()
-api_key = 'youapi'
+api_key = 'yourapi'
 driver.get("https://www.youtube.com/c/%E9%BB%83%E6%B0%8F%E5%85%84%E5%BC%9F/videos")
 videoidlist = []
 replies = []
@@ -39,7 +39,7 @@ def video_comments(video_id):
 
     # creating youtube resource object
     youtube = build('youtube', 'v3',
-                    developerKey='AIzaSyDbspMiNKcZk7zJCXluRn8sthImntang6Y')
+                    developerKey='yourapi')
     # retrieve youtube video results
     video_response = youtube.commentThreads().list(
         part='snippet,replies',
