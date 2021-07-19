@@ -27,6 +27,7 @@
     </li>
     </li>
     <li>功能展示</a></li>
+    <li>所需套件下載</a></li>
     <li>使用技術</a></li>
     <li>聯絡資料</a></li>
   </ol>
@@ -68,6 +69,12 @@ f.close()
 ```
 
 ![Product Name Screen Shot][product-screenshot]
+
+## 所需套件下載
+
+-   [selenium](https://pypi.org/project/selenium/)
+-   [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
+-   [snownlp](https://pypi.org/project/snownlp/)
 
 ## 使用技術
 
